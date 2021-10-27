@@ -10,7 +10,6 @@ function handleSubmit(e) {
   chrome.storage.sync.set({
     options: JSON.stringify({
       name: document.getElementById("addon-option-name").value,
-      frequency: document.getElementById("addon-option-frequency").value,
       message: document.getElementById("addon-option-message").value,
     }),
   });
@@ -22,7 +21,6 @@ function constructOptions() {
     const { name, frequency, message } = configs;
 
     document.getElementById("addon-option-name").value = name;
-    document.getElementById("addon-option-frequency").value = frequency;
     document.getElementById("addon-option-message").value = message;
 
     const submitButton = document.getElementById(

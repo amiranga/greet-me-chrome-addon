@@ -27,6 +27,7 @@ function displayPopup() {
   border: 1px solid rgb(51, 102, 153);
   padding: 10px;
   background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 50px 10px #0ff;
   z-index: 2001;
   overflow: visible;
   text-align: center;
@@ -68,7 +69,7 @@ function displayPopup() {
 
 function tick() {
   var mins = new Date().getMinutes();
-  if (mins == "25") {
+  if (mins == "00") {
     displayPopup();
   }
 }
